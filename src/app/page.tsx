@@ -1,4 +1,11 @@
+import { Banner } from '@/components/banner';
+import Welcome from '@/components/Welcome';
+
 export default function Home() {
-  console.log('first');
-  return <div>s</div>;
+  return (
+    <div className="my-20">
+      <Banner />
+      <Welcome />
+    </div>
+  );
 }
