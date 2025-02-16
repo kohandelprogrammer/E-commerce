@@ -24,6 +24,7 @@ const ProductItem = async (props: { product: any }) => {
           />
         </div>
       </CardHeader>
+
       <CardContent>
         <h2 className="text-xl font-bold">{product?.name}</h2>
         <p className="text-gray-500">{product?.category}</p>
@@ -39,6 +40,7 @@ const ProductItem = async (props: { product: any }) => {
           </div>
         </div>
       </CardContent>
+
       <CardFooter>
         <Button className="w-full">
           <Link href={`/products/${product.id}`}>More Detail</Link>
