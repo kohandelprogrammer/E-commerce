@@ -8,9 +8,10 @@ import {
 } from '@/components/ui';
 import Link from 'next/link';
 import { GalleryThumbnails, Heart } from 'lucide-react';
+import { PrismaType } from '@/lib/prisma';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const ProductItem = async (props: { product: any }) => {
+const ProductItem = async (props: { product: PrismaType.Product }) => {
   const { product } = props;
   return (
     <Card className="w-[400px] transform transition-transform duration-300 hover:scale-105">

@@ -1,6 +1,3 @@
--- AlterTable
-ALTER TABLE "Product" ALTER COLUMN "price" SET DEFAULT 0.0;
-
 -- CreateTable
 CREATE TABLE "Image" (
     "id" TEXT NOT NULL,
