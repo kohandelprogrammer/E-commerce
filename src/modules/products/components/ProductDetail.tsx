@@ -17,7 +17,7 @@ export default function ProductDetail(product: any) {
         <CardContent>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
-              {product?.images.length > 0 ? (
+              {product?.images ? (
                 <Image
                   src={product?.images[0].image}
                   alt={product?.name}

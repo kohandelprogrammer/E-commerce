@@ -1,8 +1,8 @@
-import React from 'react';
 import ProductItem from './ProductItem';
-import { PrismaType } from '@/lib/prisma';
+import { ProductsWithImages } from '@/types';
 
-function productList({ product }: { product: PrismaType.Product[] }) {
+function productList({ product }: { product: ProductsWithImages[] }) {
+  console.log(product);
   return (
     <div className="flex flex-wrap justify-between items-center w-full my-10">
       {product.map((item) => {
