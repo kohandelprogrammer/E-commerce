@@ -22,6 +22,7 @@ import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 import { upsertProduct } from '../services';
 import { useSearchParams } from 'next/navigation';
+import UploadImage from './UploadImage';
 
 const ProductForm = (props: { product: Product | null }) => {
   const searchParams = useSearchParams();
@@ -120,11 +121,12 @@ const ProductForm = (props: { product: Product | null }) => {
           </Button>
         </CardFooter>
       </form>
-      {/* {product?.id && (
+
+      {product?.id && (
         <CardFooter>
           <UploadImage productId={product?.id} />
         </CardFooter>
-      )} */}
+      )}
     </Card>
   );
 };

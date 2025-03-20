@@ -8,6 +8,7 @@ import {
 import Link from 'next/link';
 import { GalleryThumbnails, Heart } from 'lucide-react';
 import { ProductsWithImages } from '@/types';
+import Image from 'next/image';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const ProductItem = (props: { product: ProductsWithImages }) => {
@@ -16,12 +17,12 @@ const ProductItem = (props: { product: ProductsWithImages }) => {
     <Card className="w-[400px] transform transition-transform duration-300 hover:scale-105">
       <CardHeader>
         <div className="relative w-full h-[300px]">
-          {/* <Image
+          <Image
             src={product?.images[0]?.image || '/assets/noImage.jpg'}
             alt={product?.name}
             fill
             className="rounded-t-lg object-cover"
-          /> */}
+          />
         </div>
       </CardHeader>
 

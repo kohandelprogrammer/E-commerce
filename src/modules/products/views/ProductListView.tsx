@@ -2,19 +2,19 @@
 
 import React, { useEffect, useState } from 'react';
 import ProductList from '../components/ProductList';
-import { getProductsApi } from '../services';
+import { getProducts } from '../services';
 import { ProductsWithImages } from '@/types';
 
 function ProductListView() {
   const [products, setProducts] = useState<ProductsWithImages[]>([]);
 
-  const getData = async () => {
-    const product: { data: ProductsWithImages[] } = await getProductsApi();
-    setProducts(product?.data);
+  const getProductData = async () => {
+    const result = await getProducts();
+    setProducts(result);
   };
 
   useEffect(() => {
-    getData();
+    getProductData();
   }, []);
 
   return (

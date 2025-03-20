@@ -12,7 +12,7 @@ export const getProducts = async () => {
 
 export const getProductsApi = async () => {
   const result = await fetch('/api/product');
-  const response = result.json();
+  const response = await result.json();
 
   return response;
 };

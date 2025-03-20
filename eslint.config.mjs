@@ -17,6 +17,8 @@ const eslintConfig = [
       'no-console': 0,
       'react-hooks/rules-of-hooks': 0,
       '@typescript-eslint/no-explicit-any': 1,
+      'react-hooks/exhaustive-deps': 0,
+      '@typescript-eslint/no-unused-vars':1
     },
   },
 ];
