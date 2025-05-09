@@ -23,8 +23,9 @@ import { useForm } from 'react-hook-form';
 import { upsertProduct } from '../services';
 import { useSearchParams } from 'next/navigation';
 import UploadImage from './UploadImage';
+import { PrismaType } from '@/lib/prisma';
 
-const ProductForm = (props: { product: Product | null }) => {
+const ProductForm = (props: { product: PrismaType.Product | null }) => {
   const searchParams = useSearchParams();
   const discount = searchParams.get('discount');
 
